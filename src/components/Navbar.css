@@ -1,0 +1,15 @@
+.navbar { 
+    grid-area: navbar; 
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    height: 3em;
+
+    background-color: #FEFFE7;
+    color: black;
+    border-radius: 1em;
+}

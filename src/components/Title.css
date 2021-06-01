@@ -1,0 +1,9 @@
+.title-container {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+    width: 100%;
+    background-color: #644431;
+    color: #FEFFE7;
+}

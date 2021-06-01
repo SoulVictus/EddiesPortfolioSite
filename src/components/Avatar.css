@@ -1,0 +1,11 @@
+.avatar {
+    position: absolute;
+    top: -4em;
+    width: 10.75em;
+    height: 10.75em;
+
+    background: url("./eddieavatar.png") center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1.1875em solid #FEFFE7;
+  }
