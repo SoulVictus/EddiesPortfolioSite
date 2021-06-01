@@ -1,0 +1,112 @@
+.App {
+  display: grid;
+  grid-template-columns: 2em 1fr 2em;
+  grid-template-rows: 6.25em auto 5em;
+  grid-template-areas: 
+  "header header header"
+  ". main ."
+  "footer footer footer";
+  
+  height: 100%;
+
+
+  background-color: #A97953;
+  ;
+}
+
+@media screen and (max-width: 720px) {
+  .App {
+    display: grid;
+    grid-template-columns: 2em 1fr 2em;
+    grid-template-rows: 6.25em auto 6em;
+    grid-template-areas: 
+    "header header header"
+    ". main ."
+    "footer footer footer";
+    height: 100%;
+  }
+}
+
+.App-header {
+  grid-area: header;
+  display: flex;
+
+  background-color: #644431;
+  color: white;
+}
+
+.App-sidebar {
+  grid-area: sidebar;
+
+  background-color: #da39da;
+}
+
+.App-main {
+  grid-area: main;
+  display: flex;
+
+  background-color: #FEFFE7;
+}
+
+.App-footer {
+  grid-area: footer;
+
+  background-color: #644431;
+}
+
+.content-container {
+  width: 100%;
+
+  background-color: #FEFFE7;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 1em;
+}
+
+.separator-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  height: 100%;
+  width: 1em;
+}
+
+.separator {
+  width: 0.125em;
+  height: 95%;
+  
+  background-color: #47362C;
+}
+
+.avatar-container {
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 10em;
+
+}
+
+.avatar {
+  position: absolute;
+  top: -5em;
+  width: 10.75em;
+  height: 10.75em;
+  background-color: green;
+  border-radius: 50%;
+  border: 1.1875em solid #644431;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 0 2em 0 2em;
+}
+
