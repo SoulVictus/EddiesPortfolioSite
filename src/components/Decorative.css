@@ -1,0 +1,13 @@
+.decorative-container {
+    margin-top: auto;
+    height: 5em;
+    width: 15em;
+}
+
+.decorative-img {
+    margin-top: auto;
+    height: 5em;
+    background: url("decdivider.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}

@@ -4,6 +4,8 @@
     box-sizing: border-box;
 
     width: 100%;
-    background-color: #644431;
+
+    border-radius: 1em;
+    background-color: #47362c;
     color: #FEFFE7;
 }

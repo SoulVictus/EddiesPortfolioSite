@@ -8,7 +8,7 @@
 
 .header-grid {
     display: grid;
-    grid-template-columns: 5em 0.8fr 1.7fr auto 5em;
+    grid-template-columns: 5em auto 0.1fr auto 5em;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -18,17 +18,34 @@
     width: 100%;
 }
 
-@media screen and (max-width: 720px) {
-    .header-grid {
-        grid-template-columns: 2.5em 0.8fr 0.5fr 0.5fr 1em;
-        grid-template-areas:
-        ". sitetitle . navbar .";
-    }
-}
-
 .sitetitle { 
     grid-area: sitetitle;
     display: flex;
     align-items: center;
 }
+
+.sitetitle::after {
+    content: "";
+    height: 2em;
+    width: 0.125em;
+    margin: 1em;
+    background-color: #32281f;
+}
+
+@media screen and (max-width: 720px) {
+    .header-grid {
+        grid-template-columns: 2em auto 0.1fr auto 2em;
+        grid-template-areas:
+        ". sitetitle . navbar .";
+    }
+
+    .sitetitle::after {
+        content: unset;
+    }
+    
+    .h1 {
+        
+    }
+}
+
 

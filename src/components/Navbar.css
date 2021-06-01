@@ -2,6 +2,7 @@
     grid-area: navbar; 
     display: flex;
     align-items: center;
+    justify-self: flex-end;
 }
 
 .navbar-container {
@@ -12,4 +13,12 @@
     background-color: #FEFFE7;
     color: black;
     border-radius: 1em;
+}
+
+.navbar::before {
+    content: "";
+    height: 2em;
+    width: 0.125em;
+    margin: 1em;
+    background-color: #32281f;
 }
