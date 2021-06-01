@@ -123,6 +123,18 @@ h1, h2 {
     display: none;
   }
 
+  .content-grid {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 0.1fr;
+    grid-template-rows: 3em 2.6fr 3em;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      ". contentp ."
+      ". . .";
+    height: 100%;
+  }
+
   #works {
     order: 1;
   }
