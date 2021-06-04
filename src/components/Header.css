@@ -2,8 +2,8 @@
     grid-area: header;
     display: flex;
   
-    background-color: #644431;
-    color: #FEFFE7;
+    background-color: var(--sec-color);
+    color: var(--prim-color);
   }
 
 .header-grid {

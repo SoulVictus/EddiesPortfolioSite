@@ -10,7 +10,7 @@
     align-items: center;
     height: 3em;
 
-    background-color: #FEFFE7;
+    background-color: var(--prim-color);
     color: black;
     border-radius: 1em;
 }
@@ -20,5 +20,5 @@
     height: 2em;
     width: 0.125em;
     margin: 1em;
-    background-color: #32281f;
+    background-color: var(--text-color);
 }

@@ -6,6 +6,6 @@
     width: 100%;
 
     border-radius: 1em;
-    background-color: #47362c;
-    color: #FEFFE7;
+    background-color: var(--title-color);
+    color: var(--prim-color);
 }

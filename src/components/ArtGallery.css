@@ -12,3 +12,17 @@
 
     width: 100%;
 }
+
+@media screen and (max-width: 1460px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 520px){
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}

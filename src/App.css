@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
 
+:root {
+  --prim-color: #FEFFE7;
+  --sec-color: #644431;
+  --title-color: #47362c;
+  --text-color: #32281f;
+  --bck-color: #A97953;
+}
+
+
+
 h1, h2 {
   font-family: 'Rochester', cursive;
 }
@@ -16,32 +26,31 @@ h1, h2 {
   height: 100%;
 
 
-  background-color: #A97953;
+  background-color: var(--bck-color);
 }
 
 .App-sidebar {
   grid-area: sidebar;
 
-  background-color: #da39da;
 }
 
 .App-main {
   grid-area: main;
   display: flex;
 
-  background-color: #FEFFE7;
+  background-color: var(--prim-color);
 }
 
 .App-footer {
   grid-area: footer;
 
-  background-color: #644431;
+  background-color: var(--sec-color);
 }
 
 .content-container {
   width: 100%;
 
-  background-color: #FEFFE7;
+  background-color: var(--prim-color);
 }
 
 .middle-container {
@@ -66,7 +75,7 @@ h1, h2 {
   width: 0.125em;
   height: 95%;
   
-  background-color: #644431;
+  background-color: var(--sec-color);
 }
 
 .avatar-container {
