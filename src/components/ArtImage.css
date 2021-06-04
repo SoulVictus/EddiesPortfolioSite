@@ -1,0 +1,17 @@
+.image {
+    width: 100%;
+    padding-top: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: 4px 4px 10px #888888;
+}
+
+.image:hover {
+    position: relative;
+    width: 105%;
+    height: 5%;
+    top: -0.3em;
+    left: -0.3em
+}
