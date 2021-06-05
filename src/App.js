@@ -1,4 +1,4 @@
-
+import React, { useState } from "react";
 import './App.css';
 import Header from "./components/Header";
 import Avatar from "./components/Avatar";
@@ -8,8 +8,22 @@ import ArtGallery from "./components/ArtGallery";
 import ArtImage from "./components/ArtImage";
 import HorizontalSeparator from "./components/HorizontalSeparator";
 import Decorative from "./components/Decorative";
+import ImageModal from "./components/ImageModal";
 
 function App() {
+  const [currentImage, setCurrentImage] = useState("");
+  const [toggleModal, setToggleModal] = useState(false);
+
+  const handleModalShow = () => {
+    setToggleModal(prevVal => !prevVal);
+  }
+
+  const handleImageClick = (url) => {
+    console.log(url);
+    setCurrentImage(url);
+    handleModalShow();
+  }
+
   return (
     <div className="App">
       <Header />
@@ -42,15 +56,15 @@ function App() {
             <div className="content-place">
               <Title text={"My works"}/>
               <ArtGallery>
-                <ArtImage url={"image1.jpg"} />
-                <ArtImage url={"image2.jpg"} />
-                <ArtImage url={"image3.jpg"} />
-                <ArtImage url={"image4.jpg"} />
-                <ArtImage url={"image5.jpg"} />
-                <ArtImage url={"image6.jpg"} />
-                <ArtImage url={"image4.jpg"} />
-                <ArtImage url={"image5.jpg"} />
-                <ArtImage url={"image6.jpg"} />
+                <ArtImage handleImageClick={handleImageClick} url={"image1.jpg"} />
+                <ArtImage handleImageClick={handleImageClick} url={"image2.jpg"} />
+                <ArtImage handleImageClick={handleImageClick} url={"image3.jpg"} />
+                <ArtImage handleImageClick={handleImageClick} url={"image4.jpg"} />
+                <ArtImage handleImageClick={handleImageClick} url={"image5.jpg"} />
+                <ArtImage handleImageClick={handleImageClick} url={"image6.jpg"} />
+                <ArtImage handleImageClick={handleImageClick} url={"image4.jpg"} />
+                <ArtImage handleImageClick={handleImageClick} url={"image5.jpg"} />
+                <ArtImage handleImageClick={handleImageClick} url={"image6.jpg"} />
               </ArtGallery>
             </div>
           </div>
@@ -58,6 +72,7 @@ function App() {
       </div>
       <footer className="App-footer">
       </footer>
+      { toggleModal && <ImageModal handleModalShow={handleModalShow} image={currentImage}/>}
     </div>
   );
 }
